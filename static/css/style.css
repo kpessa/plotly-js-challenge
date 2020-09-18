@@ -1,0 +1,12 @@
+.td-label {
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.td-value {
+  font-family: Tahoma;
+  font-size: 14px;
+  padding: 2px 0;
+}
