@@ -1,5 +1,5 @@
 
-const filePath = "../.././data/samples.json"
+const filePath = "./samples.json"
 
 var jsonData;
 
@@ -20,30 +20,25 @@ d3.json(filePath).then(data =>{
                     .node()
                     .value;  
                  
-  initializeDemographicInfo();        
+  populateDemographicInfo(subjectID);        
   plotHorizontalBarChart(subjectID);
 })
 
 
-const initializeDemographicInfo = () => {
-  // Initialize Demographic Info
-  let index = 0;
-  let subjectMetadata = jsonData.metadata[index];
-  let subjectArray = Object.entries(subjectMetadata);
-
-  console.log(subjectArray)
+const populateDemographicInfo = subjectID => {
+  
+  let index = jsonData.names.indexOf(subjectID)
+  let subjectMetadata = jsonData.metadata[index]
+  let subjectArray = Object.entries(subjectMetadata)
 
   d3.select("#demographic-info")
     .selectAll("tr")
     .data(subjectArray)
-    .enter()
-    .append("tr")
+    // Updates existing data if already initialized and "DOM elements = data elements"
     .each(function(d){
       d3.select(this)
         .selectAll("td")
         .data(d)
-        .enter()
-        .append("td")
         .text(function(d) {
           return d;
         })
@@ -51,30 +46,15 @@ const initializeDemographicInfo = () => {
           return i % 2 ? "td-value" : "td-label";
         })
     })
-};
-
-
-// Dropdown change event
-d3.select("#selDataset").on("change",function(event){
-  let subjectID = d3.select("#selDataset").node().value 
-  updateDemographicInfo(subjectID)  
-  plotHorizontalBarChart(subjectID)
-})
-
-const updateDemographicInfo = subjectID => {
-  
-  let index = jsonData.names.indexOf(subjectID)
-  let subjectMetadata = jsonData.metadata[index]
-  let subjectArray = Object.entries(subjectMetadata)
-
-  let tableRows = d3.select("#demographic-info")
-                    .selectAll("tr")
-                    .data(subjectArray)
-
-  tableRows.each(function(d){
+    // Runs at initialization, will append needed table rows and table datums
+    .enter()
+      .append("tr")
+      .each(function(d){
         d3.select(this)
           .selectAll("td")
           .data(d)
+          .enter()
+          .append("td")
           .text(function(d) {
             return d;
           })
@@ -82,10 +62,18 @@ const updateDemographicInfo = subjectID => {
             return i % 2 ? "td-value" : "td-label";
           })
       })
-
-
-
 }
+
+
+
+// Dropdown change event
+d3.select("#selDataset").on("change",function(event){
+  let subjectID = d3.select("#selDataset").node().value 
+  populateDemographicInfo(subjectID)  
+  plotHorizontalBarChart(subjectID)
+})
+
+
 
 const plotHorizontalBarChart = subjectID => {
   // Horizontal Bar Chart  

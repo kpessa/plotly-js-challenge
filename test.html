@@ -23,11 +23,14 @@
 
     d3.select("#handle")
       .selectAll("li")
+      .remove()
+    
+    d3.select("#handle")
+      .selectAll("li")
       .data(arr)
-      .text(function(d) {return d; })
       .enter()
-      .append("li")
-      .text(function(d){ return d; })
+        .append("li")
+        .text(function(d){ return d; })
 
   </script>
 </body>
