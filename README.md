@@ -8,7 +8,7 @@ Web dashboard live at https://kpessa.github.io/plotly-js-challenge/
 
 # Table of Contents
 
-1. [Plot.ly Challenge - Belly Button Biodiversity](#Plot.ly Challenge - Belly Button Biodiversity) 
+1. [Plot.ly Challenge - Belly Button Biodiversity](#"Plot.ly Challenge - Belly Button Biodiversity") 
 2. [Data](#Data)
 3. [Step 1: Plotly](#Step 1: Plotly)
 4. [Advanced Challenge Assignment (Optional)](#Advanced Challenge Assignment (Optional))
