@@ -19,6 +19,8 @@ Web dashboard live at https://kpessa.github.io/plotly-js-challenge/
 
 # Plot.ly Challenge - Belly Button Biodiversity
 
+[back to table of contents](#table-of-contents)
+
 ![Bacteria by filterforge.com](README.assets/bacteria.jpg)
 
 In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
@@ -27,6 +29,8 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 ## Data
 
+[back to table of contents](#table-of-contents)
+
 ### About the Data
 
 Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
@@ -34,6 +38,8 @@ Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly 
 ![image-20210305065044084](README.assets/image-20210305065044084.png)
 
 ## Step 1: Plotly
+
+[back to table of contents](#table-of-contents)
 
 1. Use the D3 library to read in `samples.json`.
 
@@ -75,6 +81,8 @@ Additionally, you are welcome to create any layout that you would like for your 
 
 ## Advanced Challenge Assignment (Optional)
 
+[back to table of contents](#table-of-contents)
+
 The following task is advanced and therefore optional.
 
 * Adapt the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
@@ -87,11 +95,15 @@ The following task is advanced and therefore optional.
 
 ## Deployment
 
+[back to table of contents](#table-of-contents)
+
 * Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to your deployment and your GitHub repo.
 
 * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
 ## Plotly.js documentation
+
+[back to table of contents](#table-of-contents)
 
 * Refer to the [Plotly.js documentation](https://plot.ly/javascript/) when building the plots.
 
