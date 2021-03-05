@@ -8,9 +8,16 @@ Web dashboard live at https://kpessa.github.io/plotly-js-challenge/
 
 # Table of Contents
 
-[toc]
+1. [Plot.ly Challenge - Belly Button Biodiversity](#Plot.ly Challenge - Belly Button Biodiversity) 
+2. [Data](#Data)
+3. [Step 1: Plotly](#Step 1: Plotly)
+4. [Advanced Challenge Assignment (Optional)](#Advanced Challenge Assignment (Optional))
+5. [Deployment](#Deployment)
+6. [Plotly.js documentation](#Plotly.js documentation)
 
-# Plot.ly Challenge- Belly Button Biodiversity
+
+
+# Plot.ly Challenge - Belly Button Biodiversity
 
 ![Bacteria by filterforge.com](README.assets/bacteria.jpg)
 
@@ -19,6 +26,10 @@ In this assignment, you will build an interactive dashboard to explore the [Bell
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
 ## Data
+
+### About the Data
+
+Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
 
 ![image-20210305065044084](README.assets/image-20210305065044084.png)
 
@@ -80,12 +91,7 @@ The following task is advanced and therefore optional.
 
 * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
-## Hints
-
-* Use `console.log` inside of your JavaScript code to see what your data looks like at each step.
+## Plotly.js documentation
 
 * Refer to the [Plotly.js documentation](https://plot.ly/javascript/) when building the plots.
 
-### About the Data
-
-Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](
